@@ -5,6 +5,8 @@ export default {
     colors: {
       primary: "#9538E2",
       white: "#fff",
+      lightWhite: "#09080F99",
+      black: "#000",
     },
     fontFamily: {
       sora: ["Sora", "system-ui"],

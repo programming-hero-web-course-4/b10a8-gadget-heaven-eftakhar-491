@@ -1,0 +1,333 @@
+[
+  {
+    "product_id": "P001",
+    "product_title": "Apple iPhone 15 Pro Max",
+    "product_image": "https://example.com/iphone15promax.jpg",
+    "category": "Phones",
+    "price": 1299,
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
+    "specification": [
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P002",
+    "product_title": "Samsung Galaxy S23 Ultra",
+    "product_image": "https://example.com/galaxys23ultra.jpg",
+    "category": "Phones",
+    "price": 1199,
+    "description": "High-performance smartphone with powerful camera features.",
+    "specification": [
+      "6.8-inch Dynamic AMOLED display",
+      "Snapdragon 8 Gen 2",
+      "200MP quad-camera system",
+      "5000mAh battery",
+      "Up to 1TB storage"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P003",
+    "product_title": "MacBook Pro 16-inch",
+    "product_image": "https://example.com/macbookpro16.jpg",
+    "category": "Computers",
+    "price": 2399,
+    "description": "High-performance laptop for professionals.",
+    "specification": [
+      "16-inch Liquid Retina XDR display",
+      "Apple M2 Max chip",
+      "32GB RAM",
+      "1TB SSD storage",
+      "Up to 20 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": "P004",
+    "product_title": "Dell XPS 13",
+    "product_image": "https://example.com/dellxps13.jpg",
+    "category": "Computers",
+    "price": 999,
+    "description": "Sleek and powerful ultrabook.",
+    "specification": [
+      "13.4-inch FHD+ display",
+      "Intel Core i7 processor",
+      "16GB RAM",
+      "512GB SSD storage",
+      "Lightweight design"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P005",
+    "product_title": "Apple Watch Series 8",
+    "product_image": "https://example.com/applewatch8.jpg",
+    "category": "Smart Watches",
+    "price": 399,
+    "description": "Advanced health and fitness tracking watch.",
+    "specification": [
+      "1.9-inch LTPO OLED display",
+      "Blood oxygen and ECG sensors",
+      "Up to 18 hours battery life",
+      "Water-resistant"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P006",
+    "product_title": "Samsung Galaxy Watch 5",
+    "product_image": "https://example.com/galaxywatch5.jpg",
+    "category": "Smart Watches",
+    "price": 299,
+    "description": "Advanced health monitoring and connectivity features.",
+    "specification": [
+      "1.4-inch AMOLED display",
+      "BioActive Sensor",
+      "GPS, heart rate monitor",
+      "Up to 40 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "P007",
+    "product_title": "Anker 65W Charger",
+    "product_image": "https://example.com/anker65w.jpg",
+    "category": "Chargers",
+    "price": 69,
+    "description": "Compact fast charger for phones and laptops.",
+    "specification": [
+      "65W output",
+      "USB-C Power Delivery",
+      "Foldable plug",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P008",
+    "product_title": "HP Spectre x360",
+    "product_image": "https://example.com/hpspectrex360.jpg",
+    "category": "Computers",
+    "price": 1299,
+    "description": "Convertible laptop with premium design and performance.",
+    "specification": [
+      "13.5-inch OLED display",
+      "Intel Core i7 processor",
+      "16GB RAM",
+      "1TB SSD storage",
+      "360-degree hinge"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P009",
+    "product_title": "Google Pixel 7 Pro",
+    "product_image": "https://example.com/pixel7pro.jpg",
+    "category": "Phones",
+    "price": 899,
+    "description": "High-end smartphone with Google’s latest AI features.",
+    "specification": [
+      "6.7-inch LTPO OLED display",
+      "Google Tensor G2 chip",
+      "Triple rear camera",
+      "5000mAh battery",
+      "5G connectivity"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P010",
+    "product_title": "Lenovo ThinkPad X1 Carbon",
+    "product_image": "https://example.com/thinkpadx1.jpg",
+    "category": "Computers",
+    "price": 1399,
+    "description": "Durable business laptop with powerful specs.",
+    "specification": [
+      "14-inch WUXGA display",
+      "Intel Core i7 processor",
+      "16GB RAM",
+      "512GB SSD storage",
+      "Military-grade durability"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P011",
+    "product_title": "Oppo Watch 3 Pro",
+    "product_image": "https://example.com/oppowatch3pro.jpg",
+    "category": "Smart Watches",
+    "price": 299,
+    "description": "Smart watch with long battery life and health tracking.",
+    "specification": [
+      "1.91-inch AMOLED display",
+      "Heart rate monitor",
+      "Sleep tracking",
+      "Up to 5 days battery life"
+    ],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "product_id": "P012",
+    "product_title": "Sony Xperia 1 IV",
+    "product_image": "https://example.com/xperia1iv.jpg",
+    "category": "Phones",
+    "price": 1299,
+    "description": "High-end smartphone with advanced camera capabilities.",
+    "specification": [
+      "6.5-inch 4K OLED display",
+      "Snapdragon 8 Gen 1",
+      "Triple 12MP camera setup",
+      "5000mAh battery",
+      "5G connectivity"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P013",
+    "product_title": "Anker PowerCore 26800mAh",
+    "product_image": "https://example.com/ankerpowercore.jpg",
+    "category": "Chargers",
+    "price": 89,
+    "description": "Portable charger with high capacity.",
+    "specification": [
+      "26800mAh capacity",
+      "Dual USB ports",
+      "Fast charging",
+      "Compact design"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P014",
+    "product_title": "Asus ROG Zephyrus G15",
+    "product_image": "https://example.com/rogzephyrusg15.jpg",
+    "category": "Computers",
+    "price": 1799,
+    "description": "Gaming laptop with high refresh rate display.",
+    "specification": [
+      "15.6-inch QHD 165Hz display",
+      "AMD Ryzen 9 processor",
+      "16GB RAM",
+      "1TB SSD",
+      "NVIDIA RTX 3070 GPU"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "product_id": "P015",
+    "product_title": "Huawei Watch GT 3 Pro",
+    "product_image": "https://example.com/huaweiwatchgt3pro.jpg",
+    "category": "Smart Watches",
+    "price": 329,
+    "description": "Smart watch with premium design and long battery life.",
+    "specification": [
+      "1.43-inch AMOLED display",
+      "GPS and heart rate monitor",
+      "Up to 14 days battery life",
+      "Water-resistant"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+  {
+    "product_id": "P016",
+    "product_title": "MacBook Air M2",
+    "product_image": "https://example.com/macbookairm2.jpg",
+    "category": "Computers",
+    "price": 1099,
+    "description": "Lightweight laptop with Apple M2 chip.",
+    "specification": [
+      "13.6-inch Retina display",
+      "Apple M2 chip",
+      "8GB RAM",
+      "256GB SSD",
+      "Up to 18 hours battery life"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P017",
+    "product_title": "Belkin 30W USB-C Charger",
+    "product_image": "https://example.com/belkin30wcharger.jpg",
+    "category": "Chargers",
+    "price": 59,
+    "description": "Compact fast charger for smartphones.",
+    "specification": [
+      "30W output",
+      "USB-C Power Delivery",
+      "Compact design",
+      "Compatible with most smartphones"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": "P018",
+    "product_title": "Samsung Galaxy Tab S8",
+    "product_image": "https://example.com/galaxytabs8.jpg",
+    "category": "Computers",
+    "price": 799,
+    "description": "Powerful tablet with S-Pen support.",
+    "specification": [
+      "11-inch LCD display",
+      "Snapdragon 8 Gen 1",
+      "8GB RAM",
+      "128GB storage",
+      "S-Pen included"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": "P019",
+    "product_title": "Garmin Forerunner 255",
+    "product_image": "https://example.com/forerunner255.jpg",
+    "category": "Smart Watches",
+    "price": 349,
+    "description": "Running watch with GPS and health tracking.",
+    "specification": [
+      "1.3-inch MIP display",
+      "Built-in GPS",
+      "Heart rate and sleep monitoring",
+      "Up to 14 days battery life"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": "P020",
+    "product_title": "Logitech MX Master 3",
+    "product_image": "https://example.com/mxmaster3.jpg",
+    "category": "Computers",
+    "price": 99,
+    "description": "Advanced wireless mouse for productivity.",
+    "specification": [
+      "Precision scroll wheel",
+      "Customizable buttons",
+      "Long battery life",
+      "Ergonomic design"
+    ],
+    "availability": true,
+    "rating": 4.8
+  }
+]
