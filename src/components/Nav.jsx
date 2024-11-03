@@ -3,7 +3,7 @@ import { NavLink, useLocation } from "react-router-dom";
 
 export default function Nav() {
   const { pathname } = useLocation();
-  console.log(pathname);
+
   return (
     <>
       <nav
