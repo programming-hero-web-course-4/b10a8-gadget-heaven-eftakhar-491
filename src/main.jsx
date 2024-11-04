@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Nav from "./components/Nav.jsx";
 import Home from "./components/Home/Home.jsx";
 import ShowAllProducts from "./components/Home/ShowAllProducts.jsx";
+import ProductDetails from "./components/Product Details/ProductDetails.jsx";
+import Dashbord from "./components/dashbord/Dashbord.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,10 +28,14 @@ const router = createBrowserRouter([
           },
         ],
       },
-      // {
-      //   path: "/:Computers",
-      //   element: <h1>Computers</h1>,
-      // },
+      {
+        path: "/product/:name",
+        element: <ProductDetails />,
+      },
+      {
+        path: "/dashbord",
+        element: <Dashbord />,
+      },
     ],
   },
 ]);

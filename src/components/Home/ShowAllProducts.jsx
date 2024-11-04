@@ -7,17 +7,18 @@ export default function ShowAllProducts() {
   const { categoryParams } = useParams();
   const { allProductsData, customProduct, setCustomProduct } =
     useContext(AllStates);
+  console.log(categoryParams);
 
   useEffect(() => {
     if (categoryParams) {
       setCustomProduct(
-        allProductsData.filter((item) => item.category === categoryParams)
+        allProductsData?.filter((item) => item.category === categoryParams)
       );
     } else {
       setCustomProduct([...allProductsData]);
     }
   }, [categoryParams, allProductsData]);
-  console.log(categoryParams, customProduct);
+
   return (
     <>
       <section className="flex justify-evenly flex-wrap gap-3 w-full">

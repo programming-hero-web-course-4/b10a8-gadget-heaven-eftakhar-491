@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation, useParams } from "react-router-dom";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer/Footer";
@@ -11,11 +11,17 @@ function App() {
   const [allProductsData, setAllProductsData] = useState([]);
   const [allProductsCategoryData, setAllProductsCategoryData] = useState([]);
   const [customProduct, setCustomProduct] = useState([]);
+  const [productDetailsData, setProductDetailsData] = useState({});
   useEffect(() => {
     axios.get("./productsData.json").then((res) => {
       setAllProductsData(res.data);
     });
   }, []);
+  const { pathname } = useLocation();
+  const { categoryParams } = useParams();
+  const decodedCategoryParams =
+    categoryParams && categoryParams.split(" ").join("%20");
+  console.log(pathname, ",", decodedCategoryParams, ",", categoryParams);
 
   return (
     <>
@@ -27,12 +33,20 @@ function App() {
           setAllProductsCategoryData,
           allProductsData,
           setAllProductsData,
+          productDetailsData,
+          setProductDetailsData,
         }}
       >
-        <main className="bg-[#f4f4f4cb] font-sora max-w-[1600px] mx-auto">
+        <main className="relative bg-[#f4f4f4cb] font-sora max-w-[1600px] mx-auto">
           {/* <Nav /> */}
-          <Header />
-
+          {/* <Header /> */}
+          {pathname === "/" ||
+          pathname === `/${categoryParams}` ||
+          pathname === `/${decodedCategoryParams}` ? (
+            <Header />
+          ) : (
+            <Nav />
+          )}
           <Outlet />
           <Footer />
         </main>

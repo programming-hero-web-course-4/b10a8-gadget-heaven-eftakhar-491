@@ -7,6 +7,8 @@ export default {
       white: "#fff",
       lightWhite: "#09080F99",
       black: "#000",
+      green: "#309C08",
+      lightGreen: "#309C081A",
     },
     fontFamily: {
       sora: ["Sora", "system-ui"],
