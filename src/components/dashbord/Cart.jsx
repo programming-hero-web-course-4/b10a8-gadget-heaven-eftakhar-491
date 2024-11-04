@@ -1,4 +1,5 @@
 import React from "react";
+import CartDetails from "./CartDetails";
 
 export default function Cart() {
   return (
@@ -29,6 +30,15 @@ export default function Cart() {
               Purchase
             </button>
           </div>
+        </div>
+        <div>
+          <CartDetails />
+          <CartDetails />
+          <CartDetails />
+          <CartDetails />
+          <CartDetails />
+          <CartDetails />
+          <CartDetails />
         </div>
       </section>
     </>

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Cart from "./Cart";
 import Wish from "./Wish";
+import Modal from "./Modal";
 
 export default function Dashbord() {
   const [cartWish, setCartWish] = useState(true);
@@ -19,14 +20,18 @@ export default function Dashbord() {
           <div className="flex items-center justify-center mt-2 gap-3">
             <button
               onClick={() => setCartWish(true)}
-              className="w-32 border-2 border-white text-white py-1 rounded-3xl font-bold"
+              className={`${
+                cartWish ? "bg-white text-primary" : " text-white"
+              } w-32 border-2 border-white  py-1 rounded-3xl font-bold`}
             >
               {" "}
               Cart
             </button>
             <button
               onClick={() => setCartWish(false)}
-              className="w-32 border-2 border-white text-white py-1 rounded-3xl font-bold"
+              className={`${
+                cartWish ? " text-white" : "bg-white text-primary"
+              } w-32 border-2 border-white  py-1 rounded-3xl font-bold`}
             >
               Wishlist
             </button>
@@ -34,6 +39,7 @@ export default function Dashbord() {
         </div>
         {cartWish ? <Cart /> : <Wish />}
       </section>
+      <Modal />
     </>
   );
 }
