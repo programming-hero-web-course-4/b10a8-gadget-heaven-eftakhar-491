@@ -11,7 +11,7 @@ export default function Footer() {
           Leading the way in cutting-edge technology and innovation.
         </p>
         <hr className="border-lightWhite w-11/12 lg:w-4/5 mx-auto" />
-        <div className="w-11/12 md:w-1/3 mx-auto flex justify-between mt-5">
+        <div className="w-11/12 md:w-1/3 mx-auto flex flex-col md:flex-row gap-4 justify-between mt-5">
           <div>
             <h1 className="text-center font-bold text-xl">Service</h1>
             <ul className="text-center text-sm text-lightWhite">
@@ -50,11 +50,6 @@ export default function Footer() {
             </ul>
           </div>
         </div>
-        <hr className="mt-6 mb-4 border-lightWhite w-11/12 lg:w-4/5 mx-auto" />
-
-        <p className="text-center text-sm font-bold text-lightWhite">
-          All Right Reserve @Gadget Heaven
-        </p>
       </footer>
     </>
   );

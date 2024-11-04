@@ -7,10 +7,10 @@ export default function Cart({ setBuy }) {
   return (
     <>
       <section className="mt-4 mx-auto lg:w-4/5 w-11/12">
-        <div className="flex justify-between items-center">
+        <div className="flex flex-col md:flex-row justify-between items-center">
           <h1 className="font-bold text-2xl">Cart</h1>
-          <div className="flex gap-3">
-            <h1 className="text-2xl font-bold">
+          <div className="flex flex-col md:flex-row gap-3">
+            <h1 className="text-xl md:text-2xl font-bold">
               Total cost: $ {cart?.reduce((acc, crr) => acc + crr.price, 0)}
             </h1>
             <button
@@ -39,7 +39,11 @@ export default function Cart({ setBuy }) {
               onClick={() => {
                 cart.length !== 0 && setBuy(true);
               }}
-              className="border-2 border-primary hover:bg-white hover:text-primary active:scale-95 text-white bg-primary rounded-3xl px-4 py-1 font-bold"
+              className={`${
+                cart.length === 0
+                  ? " text-black bg-lightWhite rounded-3xl px-4 py-1 font-bold"
+                  : "border-2 border-primary hover:bg-white hover:text-primary active:scale-95 text-white bg-primary rounded-3xl px-4 py-1 font-bold"
+              }`}
             >
               Purchase
             </button>

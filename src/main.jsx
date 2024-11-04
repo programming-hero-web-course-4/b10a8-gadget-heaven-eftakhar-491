@@ -8,15 +8,20 @@ import Home from "./components/Home/Home.jsx";
 import ShowAllProducts from "./components/Home/ShowAllProducts.jsx";
 import ProductDetails from "./components/Product Details/ProductDetails.jsx";
 import Dashbord from "./components/dashbord/Dashbord.jsx";
+import Error from "./components/Error/Error.jsx";
+import Statistics from "./components/statistics/Statistics.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
+
     children: [
       {
         path: "/",
         element: <Home />,
+
         children: [
           {
             path: "/",
@@ -29,12 +34,16 @@ const router = createBrowserRouter([
         ],
       },
       {
-        path: "/product/:name",
+        path: "/product",
         element: <ProductDetails />,
       },
       {
         path: "/dashbord",
         element: <Dashbord />,
+      },
+      {
+        path: "/statistics",
+        element: <Statistics />,
       },
     ],
   },

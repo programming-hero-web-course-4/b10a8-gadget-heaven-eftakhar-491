@@ -14,12 +14,12 @@ export default function Home() {
   }, [allProductsData]);
   return (
     <>
-      <section className="mt-80 lg:w-4/5 mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-5">
+      <section className="mt-56 md:mt-80  lg:w-4/5 mx-auto">
+        <h1 className="md:text-3xl text-lg font-bold text-center mb-5">
           Explore Cutting-Edge Gadgets
         </h1>
 
-        <div className="  flex justify-evenly">
+        <div className="flex justify-evenly lg:flex-row flex-col">
           <CategorySection />
           <Outlet />
           {/* <ShowAllProducts /> */}

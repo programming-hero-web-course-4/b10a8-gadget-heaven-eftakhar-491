@@ -14,21 +14,38 @@ function App() {
   const [productDetailsData, setProductDetailsData] = useState({});
   const [cart, setCart] = useState([]);
   const [wish, setWish] = useState([]);
-  console.log(cart, wish);
+  const [cartDesiable, setCartDesiable] = useState(false);
+  const [wishDesiable, setWishDesiable] = useState(false);
+  const [statistics, setStatistics] = useState([]);
   useEffect(() => {
-    axios.get("./productsData.json").then((res) => {
+    axios.get("/productsData.json").then((res) => {
       setAllProductsData(res.data);
     });
   }, []);
+
+  useEffect(() => {
+    setProductDetailsData(JSON.parse(localStorage.getItem("pd")));
+  }, []);
+
   const { pathname } = useLocation();
   const { categoryParams } = useParams();
   const decodedCategoryParams =
     categoryParams && categoryParams.split(" ").join("%20");
 
+  console.log();
+  document.title = `Gadget Heaven | ${
+    pathname === "/" ? "Home" : pathname.split("").slice(1).join("")
+  }`;
   return (
     <>
       <AllStates.Provider
         value={{
+          statistics,
+          setStatistics,
+          cartDesiable,
+          setCartDesiable,
+          wishDesiable,
+          setWishDesiable,
           cart,
           setCart,
           wish,

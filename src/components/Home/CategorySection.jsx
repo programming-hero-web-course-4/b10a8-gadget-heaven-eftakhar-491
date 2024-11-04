@@ -7,7 +7,7 @@ export default function CategorySection() {
   console.log();
   return (
     <>
-      <div className="w-48 h-fit bg-white rounded-md p-4 flex-shrink-0 ">
+      <div className="lg:w-48 h-fit gap-2 bg-white rounded-md p-4 flex-shrink-0 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-1 mb-4">
         <NavLink
           className={({ isActive }) =>
             isActive

@@ -1,11 +1,22 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import demoimg from "..//../assets/banner.jpg";
 import ReactStars from "react-rating-stars-component";
 import wishlist from "../../assets/love.png";
 import { AllStates } from "../../context/AllStates";
 export default function ProductDetails() {
-  const { productDetailsData, setCart, setWish } = useContext(AllStates);
+  const {
+    productDetailsData,
+    setCart,
+    setWish,
+    cartDesiable,
+    setCartDesiable,
+    wishDesiable,
+    setWishDesiable,
+    cart,
+  } = useContext(AllStates);
+
   function handelAddCart(clickedData) {
+    setCartDesiable(true);
     setCart((pre) => {
       return [
         ...pre.filter((item) => item.product_id !== clickedData.product_id),
@@ -13,7 +24,9 @@ export default function ProductDetails() {
       ];
     });
   }
+
   function handelWishClick(clickedData) {
+    setWishDesiable(true);
     setWish((pre) => {
       return [
         ...pre.filter((item) => item.product_id !== clickedData.product_id),
@@ -28,7 +41,7 @@ export default function ProductDetails() {
         <h1 className="pt-8 text-white font-bold text-2xl md:text-4xl text-center">
           Product Details
         </h1>
-        <p className="text-sm max-w-[600px] text-white text-center mx-auto">
+        <p className="px-3 text-sm max-w-[600px] text-white text-center mx-auto">
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
@@ -53,8 +66,8 @@ export default function ProductDetails() {
             <div>
               <h1 className="text-xl font-bold">Specification</h1>
               <ol className="ml-5 list-decimal">
-                {productDetailsData?.specification?.map((item) => (
-                  <li>{item}</li>
+                {productDetailsData?.specification?.map((item, i) => (
+                  <li key={i + 3}>{item}</li>
                 ))}
               </ol>
             </div>
@@ -77,7 +90,11 @@ export default function ProductDetails() {
             <div className="flex items-center gap-3">
               <button
                 onClick={() => handelAddCart(productDetailsData)}
-                className="px-4 py-2 rounded-2xl gap-2 font-semibold flex bg-primary text-white"
+                className={`${
+                  cartDesiable
+                    ? "bg-lightWhite px-4 py-2 rounded-2xl gap-2 font-semibold flex "
+                    : "active:scale-95 px-4 py-2 rounded-2xl gap-2 font-semibold flex bg-primary text-white"
+                }`}
               >
                 Add To Cart
                 <svg
@@ -97,7 +114,11 @@ export default function ProductDetails() {
               </button>
               <button
                 onClick={() => handelWishClick(productDetailsData)}
-                className="w-10 p-2 flex justify-center items-center h-10 border-2  rounded-full"
+                className={`${
+                  wishDesiable
+                    ? "bg-lightWhite w-10 p-2 flex justify-center items-center h-10 border-2  rounded-full"
+                    : "active:scale-95 w-10 p-2 flex justify-center items-center h-10 border-2  rounded-full"
+                }`}
               >
                 <img src={wishlist} alt="" />
               </button>

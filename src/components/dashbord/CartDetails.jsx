@@ -11,16 +11,16 @@ export default function CartDetails({ data }) {
   }
   return (
     <>
-      <div className="bg-white flex shadow-lg rounded-xl gap-3 p-4 mt-5">
-        <div className="w-60">
+      <div className="bg-white flex flex-col md:flex-row shadow-lg rounded-xl gap-3 p-4 mt-5">
+        <div className="md:w-60 w-full">
           <img className="w-full rounded-lg" src={dummy} alt="" />
         </div>
         <div className="w-full">
-          <h1 className=" w-full mb-5 flex justify-between text-2xl font-bold">
+          <h1 className=" w-full mb-5 items-center gap-2 flex justify-between text-lg md:text-2xl font-bold">
             {data?.product_title}
             <img
               onClick={() => handelCancel(data)}
-              className="w-8 cursor-pointer active:scale-95"
+              className="w-8 h-8 cursor-pointer active:scale-95"
               src={cancelImg}
               alt=""
             />{" "}
