@@ -4,7 +4,23 @@ import ReactStars from "react-rating-stars-component";
 import wishlist from "../../assets/love.png";
 import { AllStates } from "../../context/AllStates";
 export default function ProductDetails() {
-  const { productDetailsData } = useContext(AllStates);
+  const { productDetailsData, setCart, setWish } = useContext(AllStates);
+  function handelAddCart(clickedData) {
+    setCart((pre) => {
+      return [
+        ...pre.filter((item) => item.product_id !== clickedData.product_id),
+        clickedData,
+      ];
+    });
+  }
+  function handelWishClick(clickedData) {
+    setWish((pre) => {
+      return [
+        ...pre.filter((item) => item.product_id !== clickedData.product_id),
+        clickedData,
+      ];
+    });
+  }
   console.log(productDetailsData);
   return (
     <>
@@ -28,8 +44,8 @@ export default function ProductDetails() {
               {" "}
               Price: $ {productDetailsData.price}
             </p>
-            <h2 className="w-fit px-3 text-sm rounded-2xl border-2 border-green bg-lightGreen text-green">
-              In Stock
+            <h2 className="mt-4 w-fit px-3 text-sm rounded-2xl border-2 border-green bg-lightGreen text-green">
+              {productDetailsData?.availability ? "In Stock" : "Out of Stock"}
             </h2>
             <p className="text-lightWhite mt-3">
               {productDetailsData.description}
@@ -59,7 +75,10 @@ export default function ProductDetails() {
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <button className="px-4 py-2 rounded-2xl gap-2 font-semibold flex bg-primary text-white">
+              <button
+                onClick={() => handelAddCart(productDetailsData)}
+                className="px-4 py-2 rounded-2xl gap-2 font-semibold flex bg-primary text-white"
+              >
                 Add To Cart
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +95,10 @@ export default function ProductDetails() {
                   />
                 </svg>
               </button>
-              <button className="w-10 p-2 flex justify-center items-center h-10 border-2  rounded-full">
+              <button
+                onClick={() => handelWishClick(productDetailsData)}
+                className="w-10 p-2 flex justify-center items-center h-10 border-2  rounded-full"
+              >
                 <img src={wishlist} alt="" />
               </button>
             </div>

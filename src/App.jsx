@@ -12,6 +12,9 @@ function App() {
   const [allProductsCategoryData, setAllProductsCategoryData] = useState([]);
   const [customProduct, setCustomProduct] = useState([]);
   const [productDetailsData, setProductDetailsData] = useState({});
+  const [cart, setCart] = useState([]);
+  const [wish, setWish] = useState([]);
+  console.log(cart, wish);
   useEffect(() => {
     axios.get("./productsData.json").then((res) => {
       setAllProductsData(res.data);
@@ -21,12 +24,15 @@ function App() {
   const { categoryParams } = useParams();
   const decodedCategoryParams =
     categoryParams && categoryParams.split(" ").join("%20");
-  console.log(pathname, ",", decodedCategoryParams, ",", categoryParams);
 
   return (
     <>
       <AllStates.Provider
         value={{
+          cart,
+          setCart,
+          wish,
+          setWish,
           customProduct,
           setCustomProduct,
           allProductsCategoryData,

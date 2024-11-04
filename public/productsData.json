@@ -229,7 +229,7 @@
       "1TB SSD",
       "NVIDIA RTX 3070 GPU"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.8
   },
   {
@@ -262,7 +262,7 @@
       "256GB SSD",
       "Up to 18 hours battery life"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.7
   },
   {
@@ -278,7 +278,7 @@
       "Compact design",
       "Compatible with most smartphones"
     ],
-    "availability": true,
+    "availability": false,
     "rating": 4.6
   },
   {

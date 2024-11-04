@@ -5,6 +5,7 @@ import Modal from "./Modal";
 
 export default function Dashbord() {
   const [cartWish, setCartWish] = useState(true);
+  const [buy, setBuy] = useState(false);
   return (
     <>
       <section>
@@ -37,9 +38,9 @@ export default function Dashbord() {
             </button>
           </div>
         </div>
-        {cartWish ? <Cart /> : <Wish />}
+        {cartWish ? <Cart setBuy={setBuy} /> : <Wish />}
       </section>
-      <Modal />
+      {buy && <Modal setBuy={setBuy} />}
     </>
   );
 }

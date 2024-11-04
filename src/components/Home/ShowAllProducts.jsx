@@ -7,7 +7,6 @@ export default function ShowAllProducts() {
   const { categoryParams } = useParams();
   const { allProductsData, customProduct, setCustomProduct } =
     useContext(AllStates);
-  console.log(categoryParams);
 
   useEffect(() => {
     if (categoryParams) {

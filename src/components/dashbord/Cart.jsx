@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useContext } from "react";
 import CartDetails from "./CartDetails";
+import { AllStates } from "../../context/AllStates";
 
-export default function Cart() {
+export default function Cart({ setBuy }) {
+  const { cart, setCart } = useContext(AllStates);
   return (
     <>
       <section className="mt-4 mx-auto lg:w-4/5 w-11/12">
         <div className="flex justify-between items-center">
           <h1 className="font-bold text-2xl">Cart</h1>
           <div className="flex gap-3">
-            <h1 className="text-2xl font-bold">Total cost: 999.99</h1>
-            <button className="flex items-center gap-2 border-2 hover:bg-primary active:scale-95 hover:text-white border-primary px-4 py-1 text-primary font-semibold rounded-3xl">
+            <h1 className="text-2xl font-bold">
+              Total cost: $ {cart?.reduce((acc, crr) => acc + crr.price, 0)}
+            </h1>
+            <button
+              onClick={() => {
+                setCart((pre) => [...pre.sort((a, b) => b.price - a.price)]);
+              }}
+              className="flex items-center gap-2 border-2 hover:bg-primary active:scale-95 hover:text-white border-primary px-4 py-1 text-primary font-semibold rounded-3xl"
+            >
               Sort by Price{" "}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -26,19 +35,20 @@ export default function Cart() {
                 />
               </svg>
             </button>
-            <button className="text-white bg-primary rounded-3xl px-4 py-1 font-bold">
+            <button
+              onClick={() => {
+                cart.length !== 0 && setBuy(true);
+              }}
+              className="border-2 border-primary hover:bg-white hover:text-primary active:scale-95 text-white bg-primary rounded-3xl px-4 py-1 font-bold"
+            >
               Purchase
             </button>
           </div>
         </div>
         <div>
-          <CartDetails />
-          <CartDetails />
-          <CartDetails />
-          <CartDetails />
-          <CartDetails />
-          <CartDetails />
-          <CartDetails />
+          {cart?.map((item, i) => (
+            <CartDetails key={i + 1} data={item} />
+          ))}
         </div>
       </section>
     </>

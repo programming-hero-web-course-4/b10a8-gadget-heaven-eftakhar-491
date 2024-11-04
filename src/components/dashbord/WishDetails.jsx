@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import dummy from "../../assets/banner.jpg";
 import cancelImg from "../../assets/cancel.png";
-export default function WishDetails() {
+import { AllStates } from "../../context/AllStates";
+export default function WishDetails({ data }) {
+  const { setCart, setWish } = useContext(AllStates);
+  function handelCancel(clickedData) {
+    setWish((pre) =>
+      pre.filter((item) => item.product_id !== clickedData.product_id)
+    );
+  }
   return (
     <>
       <div className="bg-white flex shadow-lg rounded-xl gap-3 p-4 mt-5">
@@ -10,21 +17,27 @@ export default function WishDetails() {
         </div>
         <div className="w-full">
           <h1 className=" w-full mb-5 flex justify-between text-2xl font-bold">
-            Samsung Galaxy S23 Ultra{" "}
+            {data?.product_title}
             <img
+              onClick={() => handelCancel(data)}
               className="w-8 cursor-pointer active:scale-95"
               src={cancelImg}
               alt=""
             />{" "}
           </h1>
-          <p className="text-lightWhite">
-            Ultra-slim, high-performance laptop with 13.4-inch Infinity Edge
-            display.
-          </p>
+          <p className="text-lightWhite">{data?.description}</p>
           <h2 className="text-lg text-[#141414e9] font-bold">
-            Price: $ 999.99
+            Price: $ {data.price}
           </h2>
-          <button className="active:scale-95 text-white bg-primary rounded-3xl px-4 py-1 font-bold">
+          <button
+            onClick={() => {
+              setCart((pre) => [
+                ...pre.filter((item) => item.product_id !== data.product_id),
+                data,
+              ]);
+            }}
+            className="active:scale-95 text-white bg-primary rounded-3xl px-4 py-1 font-bold"
+          >
             Add to Cart
           </button>
         </div>

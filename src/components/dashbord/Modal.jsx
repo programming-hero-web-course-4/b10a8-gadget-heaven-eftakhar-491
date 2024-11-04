@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import right from "../../assets/Group.png";
-export default function Modal() {
+import { AllStates } from "../../context/AllStates";
+export default function Modal({ setBuy }) {
+  const { cart, setCart } = useContext(AllStates);
   return (
     <>
       <section className="fixed bg-lightWhite top-0 w-full h-screen flex justify-center items-center">
@@ -14,9 +16,15 @@ export default function Modal() {
             Thanks for purchasing.
           </p>
           <h2 className="text-center font-semibold text-[#111111d1]">
-            Total: $300{" "}
+            Total: ${cart?.reduce((acc, crr) => acc + crr.price, 0)}
           </h2>
-          <button className="active:scale-95 block border-2 py-1 rounded-3xl mt-3 border-lightWhite text-center w-full">
+          <button
+            onClick={() => {
+              setBuy(false);
+              setCart([]);
+            }}
+            className="active:scale-95 block border-2 py-1 rounded-3xl mt-3 border-lightWhite text-center w-full"
+          >
             Close
           </button>
         </div>
