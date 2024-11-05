@@ -1,9 +1,9 @@
 import React from "react";
-import { useRouteError } from "react-router-dom";
+import { useNavigate, useRouteError } from "react-router-dom";
 
 export default function Error() {
   const error = useRouteError();
-  console.log(error);
+  const navigate = useNavigate();
   return (
     <>
       <div
@@ -16,7 +16,7 @@ export default function Error() {
         <h1 className="text-center font-bold text-6xl">Opps!</h1>
         <h2 className="mt-4 text-lg font-semibold text-center">
           {" "}
-          {error ? `${error.status} Not Found` : "Data Not Found"}
+          {error ? `${error.status} Not Found` : "Category Data Not Found"}
         </h2>
 
         {error && (
@@ -25,7 +25,12 @@ export default function Error() {
             <p className="text-center mt-2 max-w-[540px] text-sm font-semibold underline text-lightWhite mx-auto">
               {error.data}
             </p>
-            <button className="hover:bg-primarycolor hover:text-white active:scale-95 border-2 border-primarycolor rounded-3xl px-4 py-1 mt-4 text-primarycolor text-center block mx-auto font-bold">
+            <button
+              onClick={() => {
+                navigate("/");
+              }}
+              className="hover:bg-primarycolor hover:text-white active:scale-95 border-2 border-primarycolor rounded-3xl px-4 py-1 mt-4 text-primarycolor text-center block mx-auto font-bold"
+            >
               Go to HOMEPAGE
             </button>
           </>
