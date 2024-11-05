@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import ShowAllProducts from "./ShowAllProducts";
+
 import CategorySection from "./CategorySection";
 import { AllStates } from "../../context/AllStates";
 import axios from "axios";
@@ -22,7 +22,6 @@ export default function Home() {
         <div className="flex justify-evenly lg:flex-row flex-col">
           <CategorySection />
           <Outlet />
-          {/* <ShowAllProducts /> */}
         </div>
       </section>
     </>

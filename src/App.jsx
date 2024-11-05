@@ -65,8 +65,6 @@ function App() {
         }}
       >
         <main className="relative bg-[#f4f4f4cb] font-sora max-w-[1600px] mx-auto">
-          {/* <Nav /> */}
-          {/* <Header /> */}
           {pathname === "/" ||
           pathname === `/${categoryParams}` ||
           pathname === `/${decodedCategoryParams}` ? (

@@ -86,7 +86,6 @@ export default function Progress() {
           ))}
         </div>
       </section>
-      {/* <ProgressDetails /> */}
     </>
   );
 }
