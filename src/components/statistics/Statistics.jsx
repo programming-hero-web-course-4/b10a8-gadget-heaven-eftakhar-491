@@ -9,9 +9,9 @@ export default function Statistics() {
       ...allProductsData?.map((item) => {
         return {
           name: item?.product_title,
-          uv: item?.rating,
-          pv: item?.price,
-          amt: item?.price,
+          rating: item?.rating,
+
+          price: item?.price,
         };
       }),
     ]);

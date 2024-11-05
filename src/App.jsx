@@ -6,6 +6,8 @@ import Footer from "./components/Footer/Footer";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { AllStates } from "./context/AllStates";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [allProductsData, setAllProductsData] = useState([]);
@@ -77,6 +79,8 @@ function App() {
           <Footer />
         </main>
       </AllStates.Provider>
+
+      <ToastContainer />
     </>
   );
 }

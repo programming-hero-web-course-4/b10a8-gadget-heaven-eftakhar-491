@@ -3,6 +3,7 @@ import demoimg from "..//../assets/banner.jpg";
 import ReactStars from "react-rating-stars-component";
 import wishlist from "../../assets/love.png";
 import { AllStates } from "../../context/AllStates";
+import { Bounce, toast } from "react-toastify";
 export default function ProductDetails() {
   const {
     productDetailsData,
@@ -23,6 +24,7 @@ export default function ProductDetails() {
         clickedData,
       ];
     });
+    cartDesiable ? "" : toast.success("add this item in cart!");
   }
 
   function handelWishClick(clickedData) {
@@ -33,11 +35,12 @@ export default function ProductDetails() {
         clickedData,
       ];
     });
+    wishDesiable ? "" : toast.success("Wishlist Added");
   }
   console.log(productDetailsData);
   return (
     <>
-      <section className="h-64 w-full bg-primarycolor mb-[650px]  md:mb-80">
+      <section className="h-72 w-full bg-primarycolor mb-[750px]  md:mb-96">
         <h1 className="pt-8 text-white font-bold text-2xl md:text-4xl text-center">
           Product Details
         </h1>
@@ -45,7 +48,7 @@ export default function ProductDetails() {
           Explore the latest gadgets that will take your experience to the next
           level. From smart devices to the coolest accessories, we have it all!
         </p>
-        <div className="mt-6 flex flex-col md:flex-row md:items-center gap-4 lg:w-4/5 bg-white w-11-12 p-5 rounded-xl mx-auto">
+        <div className="mt-6 flex flex-col md:flex-row md:items-center gap-4 w-11/12 lg:w-4/5 bg-white w-11-12 p-5 rounded-xl mx-auto">
           <div className="self-center w-11/12 md:w-1/2 lg:w-2/5">
             <img
               className="w-full rounded-xl"

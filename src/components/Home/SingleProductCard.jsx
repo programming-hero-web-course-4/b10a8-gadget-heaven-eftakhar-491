@@ -15,7 +15,11 @@ export default function SingleProductCard({ data }) {
     <>
       <div className="w-72 p-4 rounded-lg bg-white justify-between flex flex-col">
         <div>
-          <img className="rounded-lg" src={data?.product_image} alt="" />
+          <img
+            className="rounded-lg w-full h-[200px]"
+            src={data?.product_image}
+            alt=""
+          />
         </div>
         <h1 className=" mt-3 font-bold text-xl">{data?.product_title}</h1>
         <p className="text-sm text-lightWhite">$ Price: {data?.price}</p>

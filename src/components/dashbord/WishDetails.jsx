@@ -3,12 +3,13 @@ import React, { useContext } from "react";
 import cancelImg from "../../assets/cancel.png";
 import { AllStates } from "../../context/AllStates";
 export default function WishDetails({ data }) {
-  const { setCart, setWish } = useContext(AllStates);
+  const { setCart, setWish, cart } = useContext(AllStates);
   function handelCancel(clickedData) {
     setWish((pre) =>
       pre.filter((item) => item.product_id !== clickedData.product_id)
     );
   }
+
   return (
     <>
       <div className="bg-white flex-col md:flex-row flex shadow-lg rounded-xl gap-3 p-4 mt-5">

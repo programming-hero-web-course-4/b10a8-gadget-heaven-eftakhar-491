@@ -36,9 +36,9 @@ export default function StateDetails({ data }) {
         <YAxis label={{ value: "Index", angle: -90, position: "insideLeft" }} />
         <Tooltip />
         <Legend />
-        <Area type="monotone" dataKey="amt" fill="#9538E250" stroke="#8884d8" />
-        <Bar dataKey="pv" barSize={20} fill="#9538E2" />
-        <Line type="monotone" dataKey="uv" stroke="#ff7300" />
+
+        <Bar dataKey="price" barSize={20} fill="#9538E2" />
+        <Line type="monotone" dataKey="rating" stroke="#ff7300" />
       </ComposedChart>
     </ResponsiveContainer>
   );

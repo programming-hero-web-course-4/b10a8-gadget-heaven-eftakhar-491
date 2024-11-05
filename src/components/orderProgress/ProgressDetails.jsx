@@ -12,6 +12,7 @@ export default function ProgressDetails({ data }) {
             <span>{data.date_time.toLocaleTimeString()}</span>
           </span>
         </h1>
+        <h2 className="text-sm font-bold mt-3">Ordered Item:</h2>
         <ol className="list-decimal ml-5 flex flex-col  w-full">
           {data.products?.map((item, i) => (
             <li key={i + 6}>{item}</li>

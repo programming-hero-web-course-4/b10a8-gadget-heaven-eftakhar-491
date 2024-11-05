@@ -1,8 +1,26 @@
-# React + Vite
+# Gadget Heaven
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Live URL https://gadget-heaven-b10-a8.surge.sh/
 
-Currently, two official plugins are available:
+# List of React Fundamental concepts used in the project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Conditional Rendering
+- Component
+- props
+- Context API
+- State
+- react Router
+
+# I'm using Context Api for handel and managing Data
+
+# 5 key features
+
+- Category wise product filter & Showing Product full details
+- Cart section implement
+- Also have Wish section, user can save item's for future purchas
+- A statistics page , user can see all product price rating and name of the product
+- A progress section , user can see order state
+
+# Design
+
+![Design](public/design.jpg)
