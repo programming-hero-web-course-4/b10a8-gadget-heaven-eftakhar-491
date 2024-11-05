@@ -35,7 +35,6 @@ function App() {
   const decodedCategoryParams =
     categoryParams && categoryParams.split(" ").join("%20");
 
-  console.log();
   document.title = `Gadget Heaven | ${
     pathname === "/" ? "Home" : pathname.split("").slice(1).join("")
   }`;

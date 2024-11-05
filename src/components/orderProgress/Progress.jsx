@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import ProgressDetails from "./ProgressDetails";
 import { AllStates } from "../../context/AllStates";
-import { toast } from "react-toastify";
 
 export default function Progress() {
   const { progress } = useContext(AllStates);

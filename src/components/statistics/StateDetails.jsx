@@ -13,7 +13,6 @@ import {
 } from "recharts";
 
 export default function StateDetails({ data }) {
-  console.log(data);
   return (
     <ResponsiveContainer width="100%" height="100%">
       <ComposedChart

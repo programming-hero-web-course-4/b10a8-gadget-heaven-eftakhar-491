@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import SingleProductCard from "./SingleProductCard";
 import { useParams } from "react-router-dom";
 import { AllStates } from "../../context/AllStates";
@@ -29,11 +29,6 @@ export default function ShowAllProducts() {
             <SingleProductCard key={item.product_id} data={item} />
           ))
         )}
-        {/* <SingleProductCard />
-        <SingleProductCard />
-        <SingleProductCard />
-        <SingleProductCard />
-        <SingleProductCard /> */}
       </section>
     </>
   );

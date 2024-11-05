@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function ProgressDetails({ data }) {
-  console.log(data);
   return (
     <>
       <div className="mt-8 bg-white p-9">

@@ -16,7 +16,7 @@ export default function Statistics() {
       }),
     ]);
   }, [allProductsData]);
-  console.log(statistics);
+
   return (
     <>
       <section className="">

@@ -3,7 +3,7 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Nav from "./components/Nav.jsx";
+
 import Home from "./components/Home/Home.jsx";
 import ShowAllProducts from "./components/Home/ShowAllProducts.jsx";
 import ProductDetails from "./components/Product Details/ProductDetails.jsx";

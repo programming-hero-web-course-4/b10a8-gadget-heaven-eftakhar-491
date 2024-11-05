@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 export default function CategorySection() {
   const { allProductsCategoryData } = useContext(AllStates);
-  console.log();
+
   return (
     <>
       <div className="lg:w-48 h-fit gap-2 bg-white rounded-md p-4 flex-shrink-0 mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-1 mb-4">

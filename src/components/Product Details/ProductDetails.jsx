@@ -1,9 +1,9 @@
-import React, { useContext, useEffect, useState } from "react";
-import demoimg from "..//../assets/banner.jpg";
+import React, { useContext } from "react";
+
 import ReactStars from "react-rating-stars-component";
 import wishlist from "../../assets/love.png";
 import { AllStates } from "../../context/AllStates";
-import { Bounce, toast } from "react-toastify";
+import { toast } from "react-toastify";
 export default function ProductDetails() {
   const {
     productDetailsData,
@@ -37,7 +37,7 @@ export default function ProductDetails() {
     });
     wishDesiable ? "" : toast.success("Wishlist Added");
   }
-  console.log(productDetailsData);
+
   return (
     <>
       <section className="h-72 w-full bg-primarycolor mb-[750px]  md:mb-96">
