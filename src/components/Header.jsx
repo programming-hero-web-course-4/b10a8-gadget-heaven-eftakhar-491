@@ -9,7 +9,7 @@ export default function Header() {
   }
   return (
     <>
-      <header className="h-[440px] md:h-[500px] bg-primary lg:w-4/5 w-11/12 mx-auto m-3 ring-[2px] ring-offset-4 rounded-xl ring-[#e9e9e9]">
+      <header className="h-[440px] md:h-[500px] bg-primarycolor lg:w-4/5 w-11/12 mx-auto m-3 ring-[2px] ring-offset-4 rounded-xl ring-[#e9e9e9]">
         <Nav />
         <h1 className="mt-5  md:text-5xl text-lg text-center font-bold text-white">
           Upgrade Your Tech Accessorize with <br /> Gadget Heaven Accessories
@@ -20,7 +20,7 @@ export default function Header() {
         </p>
         <button
           onClick={handelShopNow}
-          className="mb-6 font-bold mt-5 px-4 py-1 bg-white mx-auto block rounded-xl text-primary"
+          className="mb-6 font-bold mt-5 px-4 py-1 bg-white mx-auto block rounded-xl text-primarycolor"
         >
           Shop Now
         </button>

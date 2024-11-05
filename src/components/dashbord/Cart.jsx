@@ -3,7 +3,7 @@ import CartDetails from "./CartDetails";
 import { AllStates } from "../../context/AllStates";
 
 export default function Cart({ setBuy }) {
-  const { cart, setCart } = useContext(AllStates);
+  const { cart, setCart, setProgress } = useContext(AllStates);
   return (
     <>
       <section className="mt-4 mx-auto lg:w-4/5 w-11/12">
@@ -17,7 +17,7 @@ export default function Cart({ setBuy }) {
               onClick={() => {
                 setCart((pre) => [...pre.sort((a, b) => b.price - a.price)]);
               }}
-              className="flex items-center gap-2 border-2 hover:bg-primary active:scale-95 hover:text-white border-primary px-4 py-1 text-primary font-semibold rounded-3xl"
+              className="flex items-center gap-2 border-2 hover:bg-primarycolor active:scale-95 hover:text-white border-primarycolor px-4 py-1 text-primarycolor font-semibold rounded-3xl"
             >
               Sort by Price{" "}
               <svg
@@ -38,11 +38,22 @@ export default function Cart({ setBuy }) {
             <button
               onClick={() => {
                 cart.length !== 0 && setBuy(true);
+                setProgress((pre) => [
+                  ...pre,
+                  {
+                    date_time: new Date(),
+                    products: [...cart?.map((item) => item.product_title)],
+                    order_receive: true,
+                    processed: false,
+                    shipped: false,
+                    delivered: false,
+                  },
+                ]);
               }}
               className={`${
                 cart.length === 0
                   ? " text-black bg-lightWhite rounded-3xl px-4 py-1 font-bold"
-                  : "border-2 border-primary hover:bg-white hover:text-primary active:scale-95 text-white bg-primary rounded-3xl px-4 py-1 font-bold"
+                  : "border-2 border-primarycolor hover:bg-white hover:text-primarycolor active:scale-95 text-white bg-primarycolor rounded-3xl px-4 py-1 font-bold"
               }`}
             >
               Purchase

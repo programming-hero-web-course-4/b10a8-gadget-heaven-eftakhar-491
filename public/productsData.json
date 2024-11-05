@@ -2,7 +2,7 @@
   {
     "product_id": "P001",
     "product_title": "Apple iPhone 15 Pro Max",
-    "product_image": "https://example.com/iphone15promax.jpg",
+    "product_image": "https://cdsassets.apple.com/live/7WUAS350/images/tech-specs/iphone-15-pro-max.png",
     "category": "Phones",
     "price": 1299,
     "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
@@ -19,7 +19,7 @@
   {
     "product_id": "P002",
     "product_title": "Samsung Galaxy S23 Ultra",
-    "product_image": "https://example.com/galaxys23ultra.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/71EYdOx09+L._AC_SL1500_.jpg",
     "category": "Phones",
     "price": 1199,
     "description": "High-performance smartphone with powerful camera features.",
@@ -36,7 +36,7 @@
   {
     "product_id": "P003",
     "product_title": "MacBook Pro 16-inch",
-    "product_image": "https://example.com/macbookpro16.jpg",
+    "product_image": "https://www.custommacbd.com/cdn/shop/files/mbp16-space-black-Custom-Mac-BD_73b3e5d0-c056-4e36-ab6a-898b1be371de.jpg?v=1700118014",
     "category": "Computers",
     "price": 2399,
     "description": "High-performance laptop for professionals.",
@@ -53,7 +53,7 @@
   {
     "product_id": "P004",
     "product_title": "Dell XPS 13",
-    "product_image": "https://example.com/dellxps13.jpg",
+    "product_image": "https://mcsolution.com.bd/wp-content/uploads/2023/06/Dell-XPS-13-Plus-Laptop-2023-i7-Price-in-Bangladesh-MC-Solution-BD-1200x900.webp",
     "category": "Computers",
     "price": 999,
     "description": "Sleek and powerful ultrabook.",
@@ -70,7 +70,7 @@
   {
     "product_id": "P005",
     "product_title": "Apple Watch Series 8",
-    "product_image": "https://example.com/applewatch8.jpg",
+    "product_image": "https://cdsassets.apple.com/live/SZLF0YNV/images/sp/111848_apple-watch-series8.png",
     "category": "Smart Watches",
     "price": 399,
     "description": "Advanced health and fitness tracking watch.",
@@ -86,7 +86,7 @@
   {
     "product_id": "P006",
     "product_title": "Samsung Galaxy Watch 5",
-    "product_image": "https://example.com/galaxywatch5.jpg",
+    "product_image": "https://images.samsung.com/bd/galaxy-watch5/feature/galaxy-watch5-performance-left-visual-mo.jpg",
     "category": "Smart Watches",
     "price": 299,
     "description": "Advanced health monitoring and connectivity features.",
@@ -102,7 +102,7 @@
   {
     "product_id": "P007",
     "product_title": "Anker 65W Charger",
-    "product_image": "https://example.com/anker65w.jpg",
+    "product_image": "https://shop.grandstores.ae/media/catalog/product/cache/f4356404ac24f13c2d79ac31d8c32034/a/2/a2667k11_anker_powerport_iii_3-port_65w_pod_black_102-1296-000152__4_.jpg",
     "category": "Chargers",
     "price": 69,
     "description": "Compact fast charger for phones and laptops.",
@@ -118,7 +118,7 @@
   {
     "product_id": "P008",
     "product_title": "HP Spectre x360",
-    "product_image": "https://example.com/hpspectrex360.jpg",
+    "product_image": "https://www.custommacbd.com/cdn/shop/files/spectre-x360-Custom-Mac-BD_14163127-cf94-4c25-b34e-2e5b10efd506.png?v=1708771340",
     "category": "Computers",
     "price": 1299,
     "description": "Convertible laptop with premium design and performance.",
@@ -135,7 +135,7 @@
   {
     "product_id": "P009",
     "product_title": "Google Pixel 7 Pro",
-    "product_image": "https://example.com/pixel7pro.jpg",
+    "product_image": "https://www.mobiledokan.co/wp-content/uploads/2021/10/Google-Pixel-7-Pro-Hazel-500x500.jpg",
     "category": "Phones",
     "price": 899,
     "description": "High-end smartphone with Google’s latest AI features.",
@@ -152,7 +152,7 @@
   {
     "product_id": "P010",
     "product_title": "Lenovo ThinkPad X1 Carbon",
-    "product_image": "https://example.com/thinkpadx1.jpg",
+    "product_image": "https://aroz.com.bd/wp-content/uploads/2022/10/lenovo-laptops-x1-carbon-6th-gen-hero.webp",
     "category": "Computers",
     "price": 1399,
     "description": "Durable business laptop with powerful specs.",
@@ -169,7 +169,7 @@
   {
     "product_id": "P011",
     "product_title": "Oppo Watch 3 Pro",
-    "product_image": "https://example.com/oppowatch3pro.jpg",
+    "product_image": "https://www.mobiledokan.co/wp-content/uploads/2021/07/Oppo-Watch-2-Black.jpg",
     "category": "Smart Watches",
     "price": 299,
     "description": "Smart watch with long battery life and health tracking.",
@@ -185,7 +185,7 @@
   {
     "product_id": "P012",
     "product_title": "Sony Xperia 1 IV",
-    "product_image": "https://example.com/xperia1iv.jpg",
+    "product_image": "https://images-cdn.ubuy.co.id/651441b0a7667141c30887c8-sony-xperia-1-iv-5g-smartphone.jpg",
     "category": "Phones",
     "price": 1299,
     "description": "High-end smartphone with advanced camera capabilities.",
@@ -202,7 +202,7 @@
   {
     "product_id": "P013",
     "product_title": "Anker PowerCore 26800mAh",
-    "product_image": "https://example.com/ankerpowercore.jpg",
+    "product_image": "https://m.media-amazon.com/images/I/61vj2BPDpuL._AC_UF894,1000_QL80_.jpg",
     "category": "Chargers",
     "price": 89,
     "description": "Portable charger with high capacity.",
@@ -218,7 +218,7 @@
   {
     "product_id": "P014",
     "product_title": "Asus ROG Zephyrus G15",
-    "product_image": "https://example.com/rogzephyrusg15.jpg",
+    "product_image": "https://mcsolution.com.bd/wp-content/uploads/2022/06/asus-rog-zephyrus-g15-rtx-3070-price-in-bangladesh-1200x900.webp",
     "category": "Computers",
     "price": 1799,
     "description": "Gaming laptop with high refresh rate display.",
@@ -235,7 +235,7 @@
   {
     "product_id": "P015",
     "product_title": "Huawei Watch GT 3 Pro",
-    "product_image": "https://example.com/huaweiwatchgt3pro.jpg",
+    "product_image": "https://i0.wp.com/kryinternational.com/wp-content/uploads/2024/03/Huawei-Watch-GT-3-Pro.jpg",
     "category": "Smart Watches",
     "price": 329,
     "description": "Smart watch with premium design and long battery life.",
@@ -251,7 +251,7 @@
   {
     "product_id": "P016",
     "product_title": "MacBook Air M2",
-    "product_image": "https://example.com/macbookairm2.jpg",
+    "product_image": "https://d.newsweek.com/en/full/2079890/macbook-air-m2.jpg",
     "category": "Computers",
     "price": 1099,
     "description": "Lightweight laptop with Apple M2 chip.",
@@ -268,7 +268,7 @@
   {
     "product_id": "P017",
     "product_title": "Belkin 30W USB-C Charger",
-    "product_image": "https://example.com/belkin30wcharger.jpg",
+    "product_image": "https://adminapi.applegadgetsbd.com/storage/media/large/2742-29542.jpg",
     "category": "Chargers",
     "price": 59,
     "description": "Compact fast charger for smartphones.",
@@ -284,7 +284,7 @@
   {
     "product_id": "P018",
     "product_title": "Samsung Galaxy Tab S8",
-    "product_image": "https://example.com/galaxytabs8.jpg",
+    "product_image": "https://www.mobiledokan.co/wp-content/uploads/2021/05/Samsung-Galaxy-Tab-S8-Ultra-1-500x500.jpg",
     "category": "Computers",
     "price": 799,
     "description": "Powerful tablet with S-Pen support.",
@@ -301,7 +301,7 @@
   {
     "product_id": "P019",
     "product_title": "Garmin Forerunner 255",
-    "product_image": "https://example.com/forerunner255.jpg",
+    "product_image": "https://ph.garmin.com/m/ph/g/products/forerunner-255-slate-grey-cf-lg.jpg",
     "category": "Smart Watches",
     "price": 349,
     "description": "Running watch with GPS and health tracking.",
@@ -317,7 +317,7 @@
   {
     "product_id": "P020",
     "product_title": "Logitech MX Master 3",
-    "product_image": "https://example.com/mxmaster3.jpg",
+    "product_image": "https://www.uniquecomputerbd.com/wp-content/uploads/2022/07/mx-master-3-mild-grey-3-4-front-500x500-1.jpg",
     "category": "Computers",
     "price": 99,
     "description": "Advanced wireless mouse for productivity.",

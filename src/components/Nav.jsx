@@ -70,7 +70,7 @@ export default function Nav() {
           <NavLink
             to={"/statistics"}
             className={({ isActive }) =>
-              isActive ? `text-primary font-bold` : ""
+              isActive ? `text-primarycolor font-bold` : ""
             }
           >
             Statistics
@@ -78,10 +78,18 @@ export default function Nav() {
           <NavLink
             to={"/dashbord"}
             className={({ isActive }) =>
-              isActive ? `text-primary font-bold` : ""
+              isActive ? `text-primarycolor font-bold` : ""
             }
           >
             Dashbord
+          </NavLink>
+          <NavLink
+            to={"/progress"}
+            className={({ isActive }) =>
+              isActive ? `text-primarycolor font-bold` : ""
+            }
+          >
+            Progress
           </NavLink>
         </div>
         <div className="flex gap-3 items-center">

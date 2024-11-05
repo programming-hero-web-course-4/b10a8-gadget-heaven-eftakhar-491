@@ -9,7 +9,7 @@ export default function Dashbord() {
   return (
     <>
       <section>
-        <div className=" w-full bg-primary pb-8">
+        <div className=" w-full bg-primarycolor pb-8">
           <h1 className="pt-8 text-white font-bold text-2xl md:text-4xl text-center">
             Dashboard
           </h1>
@@ -22,7 +22,7 @@ export default function Dashbord() {
             <button
               onClick={() => setCartWish(true)}
               className={`${
-                cartWish ? "bg-white text-primary" : " text-white"
+                cartWish ? "bg-white text-primarycolor" : " text-white"
               } w-32 border-2 border-white  py-1 rounded-3xl font-bold`}
             >
               {" "}
@@ -31,7 +31,7 @@ export default function Dashbord() {
             <button
               onClick={() => setCartWish(false)}
               className={`${
-                cartWish ? " text-white" : "bg-white text-primary"
+                cartWish ? " text-white" : "bg-white text-primarycolor"
               } w-32 border-2 border-white  py-1 rounded-3xl font-bold`}
             >
               Wishlist

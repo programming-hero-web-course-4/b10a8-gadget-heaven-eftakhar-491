@@ -17,6 +17,7 @@ function App() {
   const [cartDesiable, setCartDesiable] = useState(false);
   const [wishDesiable, setWishDesiable] = useState(false);
   const [statistics, setStatistics] = useState([]);
+  const [progress, setProgress] = useState([]);
   useEffect(() => {
     axios.get("/productsData.json").then((res) => {
       setAllProductsData(res.data);
@@ -40,6 +41,8 @@ function App() {
     <>
       <AllStates.Provider
         value={{
+          progress,
+          setProgress,
           statistics,
           setStatistics,
           cartDesiable,

@@ -25,7 +25,7 @@ export default function Error() {
             <p className="text-center mt-2 max-w-[540px] text-sm font-semibold underline text-lightWhite mx-auto">
               {error.data}
             </p>
-            <button className="hover:bg-primary hover:text-white active:scale-95 border-2 border-primary rounded-3xl px-4 py-1 mt-4 text-primary text-center block mx-auto font-bold">
+            <button className="hover:bg-primarycolor hover:text-white active:scale-95 border-2 border-primarycolor rounded-3xl px-4 py-1 mt-4 text-primarycolor text-center block mx-auto font-bold">
               Go to HOMEPAGE
             </button>
           </>

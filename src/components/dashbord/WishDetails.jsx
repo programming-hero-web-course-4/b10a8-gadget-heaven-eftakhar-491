@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import dummy from "../../assets/banner.jpg";
+
 import cancelImg from "../../assets/cancel.png";
 import { AllStates } from "../../context/AllStates";
 export default function WishDetails({ data }) {
@@ -13,7 +13,7 @@ export default function WishDetails({ data }) {
     <>
       <div className="bg-white flex-col md:flex-row flex shadow-lg rounded-xl gap-3 p-4 mt-5">
         <div className="w-full md:w-60">
-          <img className="w-full rounded-lg" src={dummy} alt="" />
+          <img className="w-full rounded-lg" src={data.product_image} alt="" />
         </div>
         <div className="w-full">
           <h1 className=" w-full mb-5 flex justify-between gap-2 items-center text-lg md:text-2xl font-bold">
@@ -36,7 +36,7 @@ export default function WishDetails({ data }) {
                 data,
               ]);
             }}
-            className="active:scale-95 text-white bg-primary rounded-3xl px-4 py-1 font-bold"
+            className="active:scale-95 text-white bg-primarycolor rounded-3xl px-4 py-1 font-bold"
           >
             Add to Cart
           </button>

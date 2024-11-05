@@ -10,6 +10,7 @@ import ProductDetails from "./components/Product Details/ProductDetails.jsx";
 import Dashbord from "./components/dashbord/Dashbord.jsx";
 import Error from "./components/Error/Error.jsx";
 import Statistics from "./components/statistics/Statistics.jsx";
+import Progress from "./components/orderProgress/progress.jsx";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "/statistics",
         element: <Statistics />,
+      },
+      {
+        path: "/progress",
+        element: <Progress />,
       },
     ],
   },

@@ -20,7 +20,7 @@ export default function Statistics() {
   return (
     <>
       <section className="">
-        <div className="bg-primary py-12 w-full">
+        <div className="bg-primarycolor py-12 w-full">
           <h1 className="text-center text-white font-bold text-4xl">
             Statistics
           </h1>

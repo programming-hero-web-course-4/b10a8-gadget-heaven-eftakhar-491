@@ -37,7 +37,7 @@ export default function ProductDetails() {
   console.log(productDetailsData);
   return (
     <>
-      <section className="h-64 w-full bg-primary mb-[650px]  md:mb-80">
+      <section className="h-64 w-full bg-primarycolor mb-[650px]  md:mb-80">
         <h1 className="pt-8 text-white font-bold text-2xl md:text-4xl text-center">
           Product Details
         </h1>
@@ -47,7 +47,11 @@ export default function ProductDetails() {
         </p>
         <div className="mt-6 flex flex-col md:flex-row md:items-center gap-4 lg:w-4/5 bg-white w-11-12 p-5 rounded-xl mx-auto">
           <div className="self-center w-11/12 md:w-1/2 lg:w-2/5">
-            <img className="w-full rounded-xl" src={demoimg} alt="" />
+            <img
+              className="w-full rounded-xl"
+              src={productDetailsData?.product_image}
+              alt=""
+            />
           </div>
           <div>
             <h1 className="text-xl font-semibold">
@@ -93,7 +97,7 @@ export default function ProductDetails() {
                 className={`${
                   cartDesiable
                     ? "bg-lightWhite px-4 py-2 rounded-2xl gap-2 font-semibold flex "
-                    : "active:scale-95 px-4 py-2 rounded-2xl gap-2 font-semibold flex bg-primary text-white"
+                    : "active:scale-95 px-4 py-2 rounded-2xl gap-2 font-semibold flex bg-primarycolor text-white"
                 }`}
               >
                 Add To Cart
