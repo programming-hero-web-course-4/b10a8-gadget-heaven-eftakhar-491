@@ -23,10 +23,7 @@ export default function Nav() {
             : "bg-white px-[10%]"
         } relative py-4 w-full mx-auto flex justify-between items-center`}
       >
-        <h1
-          onClick={() => navigate("/")}
-          className="cursor-pointer flex items-center gap-2 md:text-2xl text-sm font-bold"
-        >
+        <h1 className="cursor-pointer flex items-center gap-2 md:text-2xl text-sm font-bold">
           <svg
             onClick={() => setMenu((pre) => !pre)}
             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +39,7 @@ export default function Nav() {
               d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
-          Gadget Heaven
+          <span onClick={() => navigate("/")}>Gadget Heaven</span>
         </h1>
         <div
           className={`${
