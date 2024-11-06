@@ -32,6 +32,7 @@ export default function WishDetails({ data }) {
           </h2>
           <button
             onClick={() => {
+              handelCancel(data);
               setCart((pre) => [
                 ...pre.filter((item) => item.product_id !== data.product_id),
                 data,

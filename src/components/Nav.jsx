@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 import cartImg from "../assets/cart.png";
 import loveImg from "../assets/love.png";
 import { AllStates } from "../context/AllStates";
@@ -8,10 +8,10 @@ export default function Nav() {
   const { pathname } = useLocation();
   const [menu, setMenu] = useState(false);
   const { categoryParams } = useParams();
-  const { cart, wish } = useContext(AllStates);
+  const { cart, wish, setCartWish } = useContext(AllStates);
   const decodedCategoryParams =
     categoryParams && categoryParams.split(" ").join("%20");
-
+  const navigate = useNavigate();
   return (
     <>
       <nav
@@ -23,7 +23,10 @@ export default function Nav() {
             : "bg-white px-[10%]"
         } relative py-4 w-full mx-auto flex justify-between items-center`}
       >
-        <h1 className="flex items-center gap-2 md:text-2xl text-sm font-bold">
+        <h1
+          onClick={() => navigate("/")}
+          className="cursor-pointer flex items-center gap-2 md:text-2xl text-sm font-bold"
+        >
           <svg
             onClick={() => setMenu((pre) => !pre)}
             xmlns="http://www.w3.org/2000/svg"
@@ -94,13 +97,17 @@ export default function Nav() {
         </div>
         <div className="flex gap-3 items-center">
           <div
+            onClick={() => {
+              navigate("/dashbord");
+              setCartWish(true);
+            }}
             className={`${
               pathname === "/" ||
               pathname === `/${categoryParams}` ||
               pathname === `/${decodedCategoryParams}`
                 ? "bg-white"
                 : ""
-            } w-9 p-2 rounded-full border-2 relative`}
+            } cursor-pointer w-9 p-2 rounded-full border-2 relative`}
           >
             {cart.length === 0 ? (
               ""
@@ -112,13 +119,17 @@ export default function Nav() {
             <img className="w-full" src={cartImg} alt="" />
           </div>
           <div
+            onClick={() => {
+              navigate("/dashbord");
+              setCartWish(false);
+            }}
             className={`${
               pathname === "/" ||
               pathname === `/${categoryParams}` ||
               pathname === `/${decodedCategoryParams}`
                 ? "bg-white"
                 : ""
-            } w-9 p-2 rounded-full border-2 relative`}
+            } active:scale-95 w-9 p-2 rounded-full border-2 relative cursor-pointer`}
           >
             {wish.length === 0 ? (
               ""

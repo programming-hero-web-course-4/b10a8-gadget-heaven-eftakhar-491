@@ -3,7 +3,7 @@ import React from "react";
 export default function ProgressDetails({ data }) {
   return (
     <>
-      <div className="mt-8 bg-white p-9">
+      <div className="mt-8 bg-white p-9 rounded-lg">
         <h1 className="text-2xl font-bold flex items-center flex-col lg:flex-row gap-3">
           Order placed_{" "}
           <span className="flex items-center gap-3 text-lg">
@@ -62,7 +62,7 @@ export default function ProgressDetails({ data }) {
                   data?.processed ? "bg-primarycolor" : "bg-[#900000]"
                 } w-6 h-6 py-1 rounded-full`}
               >
-                {data?.order_receive ? (
+                {data?.processed ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -99,7 +99,7 @@ export default function ProgressDetails({ data }) {
                   data?.shipped ? "bg-primarycolor" : "bg-[#900000]"
                 } w-6 h-6 py-1 rounded-full`}
               >
-                {data?.order_receive ? (
+                {data?.shipped ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -136,7 +136,7 @@ export default function ProgressDetails({ data }) {
                   data?.delivered ? "bg-primarycolor" : "bg-[#900000]"
                 } w-6 h-6 py-1 rounded-full`}
               >
-                {data?.order_receive ? (
+                {data?.delivered ? (
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"

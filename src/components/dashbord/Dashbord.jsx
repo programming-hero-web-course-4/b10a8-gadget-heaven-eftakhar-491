@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import Cart from "./Cart";
 import Wish from "./Wish";
 import Modal from "./Modal";
+import { AllStates } from "../../context/AllStates";
 
 export default function Dashbord() {
-  const [cartWish, setCartWish] = useState(true);
+  const { cartWish, setCartWish } = useContext(AllStates);
   const [buy, setBuy] = useState(false);
   return (
     <>
