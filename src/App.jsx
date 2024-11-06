@@ -36,9 +36,14 @@ function App() {
   const decodedCategoryParams =
     categoryParams && categoryParams.split(" ").join("%20");
 
-  document.title = `Gadget Heaven | ${
-    pathname === "/" ? "Home" : pathname.split("").slice(1).join("")
-  }`;
+  useEffect(() => {
+    document.title = `Gadget Heaven | ${
+      pathname === "/"
+        ? "Home"
+        : decodeURIComponent(pathname).split("").slice(1).join("")
+    }`;
+  }, [pathname]);
+
   return (
     <>
       <AllStates.Provider
